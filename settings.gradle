@@ -1,0 +1,4 @@
+include ':common_lib'
+include ':video_record_lib'
+include ':app'
+rootProject.name = "VideoRecordDemo"

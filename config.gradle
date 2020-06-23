@@ -1,0 +1,19 @@
+ext {
+
+    android = [compileSdkVersion        : 28,
+               buildToolsVersion        : "28.0.3",
+               applicationId            : "com.eoffcn.questions",
+               minSdkVersion            : 19,
+               targetSdkVersion         : 26,
+               versionCode              : 420,
+               versionName              : "4.0.0",
+               testInstrumentationRunner: "androidx.test.runner.AndroidJUnitRunner"]
+
+    api_url = [
+    ]
+
+    dependencies = [
+            // ------------- Android -------------
+    ]
+
+}
