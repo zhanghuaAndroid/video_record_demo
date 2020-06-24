@@ -6,12 +6,20 @@ import android.os.PersistableBundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import butterknife.ButterKnife;
 
 public abstract class BaseActivity extends AppCompatActivity {
+
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-        ButterKnife.bind(this);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(setLayout());
+        initView();
+        initListener();
     }
+
+    protected abstract int setLayout();
+
+    protected abstract void initListener();
+
+    protected abstract void initView();
 }
