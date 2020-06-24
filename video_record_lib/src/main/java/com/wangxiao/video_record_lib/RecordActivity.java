@@ -1,11 +1,11 @@
 package com.wangxiao.video_record_lib;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class RecordActivity extends AppCompatActivity {
+import com.wangxiao.common_lib.base.BaseActivity;
 
+public class RecordActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
